@@ -6,13 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ActivityMain">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/background" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
@@ -25,7 +18,7 @@
         android:gravity="center"
         android:text="9:45"
         android:textColor="#f9ed0f"
-        android:textSize="56sp"
+        android:textSize="80sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -50,7 +43,7 @@
             android:layout_height="match_parent"
             android:layout_margin="2dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/example" />
+            android:src="@drawable/example"/>
 
     </RelativeLayout>
 
@@ -60,5 +53,18 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="296dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:fabSize="normal"
+        android:elevation="6dp"
+        android:backgroundTint="@color/colorAccent"
+        android:src="@android:drawable/checkbox_on_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

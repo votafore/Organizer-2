@@ -1,9 +1,9 @@
 package com.votafore.organizer
 
-import android.support.v7.app.AppCompatActivity
+import android.app.Activity
 import android.os.Bundle
 
-class ActivityMain : AppCompatActivity() {
+class ActivityMain : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
