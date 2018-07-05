@@ -20,10 +20,6 @@ class ActivityKeeper @Inject constructor(): ActivityLifecycleCallbackHelper() {
     }
 
     override fun onActivityStopped(activity: Activity?) {
-
-        // TODO: check if activity can be stopped but not destroyed
-        // check the behavior and possible bugs
-
         this.activity = null
         fragmentManager = null
     }
