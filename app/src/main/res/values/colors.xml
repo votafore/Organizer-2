@@ -6,7 +6,7 @@
 
     <color name="white">#FFF</color>
 
-    <color name="item_nofocus">#edcf06</color>
-    <color name="item_focus">#f2e8e8</color>
+    <color name="item_nofocus">#4fc0e2</color>
+    <color name="item_focus">#b5e607</color>
 
 </resources>

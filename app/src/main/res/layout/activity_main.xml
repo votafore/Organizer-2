@@ -26,8 +26,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="?android:attr/windowBackground"
         app:itemBackground="@color/colorPrimary"
-        app:itemIconTint="@color/white"
-        app:itemTextColor="@color/white"
+        app:itemIconTint="@drawable/item_color"
+        app:itemTextColor="@drawable/item_color"
 
         app:menu="@menu/menu_bottom"/>
 
