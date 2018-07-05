@@ -8,17 +8,13 @@ import com.votafore.organizer.system.appnavigation.Router
 
 class ActivityPresenter constructor(private val router: Router){
 
-    val itemClickListener = object: BottomNavigationView.OnNavigationItemSelectedListener {
-
-        override fun onNavigationItemSelected(item: MenuItem): Boolean {
-
-            when(item.itemId){
-                R.id.item_main -> router.goToPage(PageRouter.PAGE_MAIN)
-                R.id.item_list -> router.goToPage(PageRouter.PAGE_LIST)
-                //R.id.item_settings -> router.goToPage(PageRouter.PAGE_MAIN)
-            }
-
-            return true
+    val itemClickListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
+        when(item.itemId){
+            R.id.item_main -> router.goToPage(PageRouter.PAGE_MAIN)
+            R.id.item_list -> router.goToPage(PageRouter.PAGE_LIST)
+            R.id.item_settings -> router.goToPage(PageRouter.PAGE_SETTINGS)
         }
+
+        true
     }
 }
