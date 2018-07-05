@@ -1,4 +1,24 @@
 package com.votafore.organizer.system.presenters
 
-class ActivityPresenter {
+import android.support.design.widget.BottomNavigationView
+import android.view.MenuItem
+import com.votafore.organizer.R
+import com.votafore.organizer.system.appnavigation.PageRouter
+import com.votafore.organizer.system.appnavigation.Router
+
+class ActivityPresenter constructor(private val router: Router){
+
+    val itemClickListener = object: BottomNavigationView.OnNavigationItemSelectedListener {
+
+        override fun onNavigationItemSelected(item: MenuItem): Boolean {
+
+            when(item.itemId){
+                R.id.item_main -> router.goToPage(PageRouter.PAGE_MAIN)
+                R.id.item_list -> router.goToPage(PageRouter.PAGE_LIST)
+                //R.id.item_settings -> router.goToPage(PageRouter.PAGE_MAIN)
+            }
+
+            return true
+        }
+    }
 }

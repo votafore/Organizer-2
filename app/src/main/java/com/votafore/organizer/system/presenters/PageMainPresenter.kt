@@ -1,4 +1,8 @@
 package com.votafore.organizer.system.presenters
 
-class PageMainPresenter {
+import javax.inject.Inject
+
+class PageMainPresenter @Inject constructor() {
+
+
 }

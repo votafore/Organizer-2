@@ -3,7 +3,6 @@ package com.votafore.organizer.system.config;
 import com.votafore.organizer.system.App;
 import com.votafore.organizer.system.appnavigation.ActivityKeeper;
 import com.votafore.organizer.system.appnavigation.PageRouter;
-import com.votafore.organizer.system.appnavigation.PageStateKeeper;
 import com.votafore.organizer.system.appnavigation.Router;
 
 import javax.inject.Singleton;
@@ -22,10 +21,10 @@ public class AppModule {
 
     @Provides
     @Singleton
-    public Router provideRouter(ActivityKeeper activityKeeper, PageStateKeeper stateKeeper){
+    public Router provideRouter(ActivityKeeper activityKeeper){
 
         application.registerActivityLifecycleCallbacks(activityKeeper);
 
-        return new PageRouter(activityKeeper, stateKeeper);
+        return new PageRouter(activityKeeper);
     }
 }
