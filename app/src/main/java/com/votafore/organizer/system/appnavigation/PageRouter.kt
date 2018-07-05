@@ -39,14 +39,7 @@ class PageRouter @Inject constructor(private val activityKeeper: ActivityKeeper,
     private fun changePage(fragmentPage: PageBase, backStack: String? = null){
 
         val transaction = activityKeeper.fragmentManager?.beginTransaction()!!
-
-//        val currentFragment = activityKeeper.fragmentManager?.findFragmentById(containerID)
-//
-//        if (currentFragment == null){
-//            transaction.add(containerID, fragmentPage)
-//        } else {
-            transaction.replace(containerID, fragmentPage)
-//        }
+        transaction.replace(containerID, fragmentPage)
 
         if (backStack != null)
             transaction.addToBackStack(backStack)

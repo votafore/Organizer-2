@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".ActivityMain">
 
-    <fragment
+    <FrameLayout
         android:id="@+id/main_container"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -15,9 +15,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/bottom_navigation" />
-
-    <include
-        layout="@layout/fragment_test" />
 
 
     <android.support.design.widget.BottomNavigationView

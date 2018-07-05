@@ -8,7 +8,6 @@ import com.votafore.organizer.system.appnavigation.Router;
 
 import javax.inject.Singleton;
 
-import dagger.Binds;
 import dagger.Module;
 import dagger.Provides;
 
@@ -22,6 +21,7 @@ public class AppModule {
     }
 
     @Provides
+    @Singleton
     public Router provideRouter(ActivityKeeper activityKeeper, PageStateKeeper stateKeeper){
 
         application.registerActivityLifecycleCallbacks(activityKeeper);

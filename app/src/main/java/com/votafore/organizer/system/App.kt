@@ -21,17 +21,11 @@ class App: Application() {
                 .appModule(AppModule(this))
                 .build()
 
-//        val appComponent = DaggerAppComponent.create()
-
         appComponent.inject(this)
 
         val activityCallback = object: ActivityLifecycleCallbackHelper() {
             override fun onActivityStarted(activity: Activity?) {
-
-
-
                 router.goToPage(PageRouter.PAGE_MAIN)
-
                 unregisterActivityLifecycleCallbacks(this)
             }
         }
