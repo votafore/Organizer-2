@@ -6,7 +6,8 @@
 
     <color name="white">#FFF</color>
 
-    <color name="item_nofocus">#4fc0e2</color>
-    <color name="item_focus">#b5e607</color>
+    <color name="item_nofocus">#9ea5d6</color>
+
+    <color name="appBackground">#eae9e9</color>
 
 </resources>
