@@ -11,8 +11,8 @@ import javax.inject.Inject
 class PageRouter @Inject constructor(private val activityKeeper: ActivityKeeper): Router {
 
     companion object {
-        const val PAGE_MAIN = 10
-        const val PAGE_LIST = 20
+        const val PAGE_MAIN     = 10
+        const val PAGE_LIST     = 20
         const val PAGE_SETTINGS = 30
     }
 

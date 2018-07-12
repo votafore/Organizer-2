@@ -19,14 +19,14 @@ class PageMain: PageBase() {
 
         val root = inflater!!.inflate(R.layout.fragment_main, container, false)
 
-        val list = root.list_events.apply {
+        root.list_events.apply {
             layoutManager = LinearLayoutManager(activity, RecyclerView.HORIZONTAL, false)
             itemAnimator = DefaultItemAnimator()
 
             // https://www.linkedin.com/pulse/create-viewpager-using-recyclerview-android-ali-ahmed/
             // https://blog.davidmedenjak.com/android/2017/06/24/viewpager-recyclerview.html
 
-            adapter = MainListAdapter()
+            adapter = MainListAdapter(activity)
 
             // add pager behavior
             val snapHelper = PagerSnapHelper()
